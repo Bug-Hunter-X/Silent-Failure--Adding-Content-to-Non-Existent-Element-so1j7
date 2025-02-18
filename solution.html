@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is visible.
+  </div>
+
+  <script>
+    const element = document.getElementById('myDiv'); //Check if the element exists
+    if (element) {
+      element.innerHTML += "<br>This text is now visible.";
+    } else {
+      console.error('Element not found!');
+    }
+  </script>
+</body>
+</html>
